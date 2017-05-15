@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.amank.calculator.MainActivity"
+    tools:showIn="@layout/activity_main">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="CALCULATOR"
+        android:id="@+id/text1"
+        android:textSize="30dp"
+        android:gravity="center_horizontal"
+        android:textStyle="bold"
+
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Number 1"
+        android:id="@+id/num1"
+        android:layout_alignTop="@+id/text1"
+        android:layout_marginTop="100dp"
+        android:gravity="clip_horizontal"
+
+        />
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Number 2"
+
+        android:layout_alignTop="@+id/num1"
+        android:layout_marginTop="100dp"
+        android:gravity="clip_horizontal"
+
+        android:id="@+id/num2" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="+(Add)"
+
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="60dp"
+        android:layout_below="@+id/num2"
+        android:layout_alignParentStart="true"
+        android:id="@+id/add" />
+
+    <Button
+        android:id="@+id/sub"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/add"
+        android:layout_centerHorizontal="true"
+        android:text="-(SUB)" />
+
+    <Button
+        android:id="@+id/mul"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/add"
+        android:layout_below="@+id/add"
+        android:layout_marginTop="29dp"
+        android:text="*(MUL)" />
+
+    <Button
+        android:id="@+id/div"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/sub"
+        android:layout_alignTop="@+id/mul"
+        android:text="/(DIV)" />
+
+
+</RelativeLayout>
